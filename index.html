@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shipping Rate Calc</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script src="./js/scripts.js"></script>
+  </head>
+  <body>
+    <h1>Shipping Rate, I'll Calc-U-Later</h1>
+
+    <form id="shippingForm">
+      <label for="length">Length:</label>
+      <input type="text" id="length" required>
+      <label for="width">Width:</label>
+      <input type="text" id="width" required>
+      <label for="height">Height:</label>
+      <input type="text" id="height" required>
+      <label for="weight">Weight:</label>
+      <input type="text" id="weight" required>
+      <label for="distance">How far is it going?:</label>
+      <input type="text" id="distance" required>
+      <button type="submit" class="btn btn-md btn-primary">Calc Me!</button>
+    </form>
+
+
+    <div id="priceDiv">
+      <p>The price of your particular parchment is <span id="priceSpan"></span> in your particular place.</p>
+    </div>
+  </body>
+</html>
